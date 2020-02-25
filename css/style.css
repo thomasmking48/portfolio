@@ -11,6 +11,11 @@ h5,
 h6 {
   color: #1e1e1e;
 }
+h4 {
+    font-weight: 500!important;
+    text-transform: capitalize!important;
+    font-size: 1em!important;
+}
 
 a {
   color: #1e1e1e;
@@ -32,6 +37,12 @@ a:hover {
 .work-content .w-like {
     font-size: 2rem!important;
     margin-top: -6px!important;
+}
+.work-content {
+    padding: 0px!important;
+}
+.content {
+    padding: 0px!important;
 }
 
 .main {
@@ -72,15 +83,27 @@ a:hover {
 .btn.active {
     color: #bd5d38;
 }
-.work-content {
-    padding: 1%!important;
-}
 .work-box {
     margin-bottom: 0rem!important;
 }
 div#myBtnContainer {
     margin: 0 auto!important;
     text-align: center;
+}
+@media (max-width:1239px) {
+section#work {
+    width: 100%;
+}
+}
+@media (max-width:650px) {
+.column {
+    width: 50%;
+}
+}
+@media (max-width:425px) {
+.column {
+    width: 100%;
+}
 }
 .work-img img {
     transition: all 1s;
@@ -226,7 +249,7 @@ div#myBtnContainer {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #bd5d38;
   margin: 0 auto;
 }
 
