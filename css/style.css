@@ -122,7 +122,8 @@ section#work {
     height: 100%!important;
     width: fit-content!important;
 }
-
+.resume-tk {font-size: 11px; color: darkgrey;}
+.resume-pre-tk {line-height: 12px; margin-bottom: 4px;}
 .p-r {
   position: relative;
 }
