@@ -314,13 +314,33 @@
             <div class="line-mf"></div><br />
               
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('websites')"> Websites</button>
   <button class="btn" onclick="filterSelection('cards')"> Cards</button>
   <button class="btn" onclick="filterSelection('flyers')"> Flyers</button>
   <button class="btn" onclick="filterSelection('trifolds')"> Trifolds</button>
   <button class="btn" onclick="filterSelection('other')"> Other projects</button>
 </div>
+
+<style>
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+/* Style the active class */
+.active, .btn:hover {
+    background-color: #495057;
+    color: #FFF!important;
+}
+</style>
+              
               
 <script>
    var filter1 = "websites"
