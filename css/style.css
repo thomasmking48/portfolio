@@ -207,6 +207,16 @@ section#work {
   display: table-cell;
   vertical-align: middle;
 }
+.resume-content {
+    padding-left: 10px;
+    margin-bottom: -10px;
+}
+
+@media (max-width:1180px) and (min-width:992px) {
+.column {
+    width: 50%;
+}
+}
 
 /*--/ Sections /--*/
 
