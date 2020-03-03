@@ -212,10 +212,23 @@ section#work {
     margin-bottom: -10px;
 }
 
-@media (max-width:1180px) and (min-width:992px) {
+@media (max-width:1250px) and (min-width:992px) {
 .column {
     width: 50%;
 }
+}
+@media (max-width:880px) {
+.column {
+    width: 50%;
+}
+}
+@media (max-width:576px) {
+.column {
+    width: 100%;
+}
+}
+section.resume-section {
+    max-width: 100%!important;
 }
 
 /*--/ Sections /--*/
