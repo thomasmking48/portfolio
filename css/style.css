@@ -110,6 +110,19 @@ section#work {
     width: 100%;
 }
 }
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+/* hide close when burger shown */
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+}
 .work-img img {
     transition: all 1s;
     object-fit: cover;
