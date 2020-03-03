@@ -211,6 +211,11 @@ section#work {
     padding-left: 10px;
     margin-bottom: -10px;
 }
+@media (min-width:1550px) {
+.column {
+    width: 25%;
+}
+}
 
 @media (max-width:1250px) and (min-width:992px) {
 .column {
