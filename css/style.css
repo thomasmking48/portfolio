@@ -142,7 +142,9 @@ section#work {
     height: 100%!important;
     width: fit-content!important;
 }
-.resume-tk {font-size: 11px; color: darkgrey;}
+.resume-tk {font-size: 11px; color: darkgrey; font-family: sans-serif; }
+.resume-tk-other {font-size: 11px; color: darkgrey; border:1px solid #CCC; border-radius:50px; font-family: sans-serif; padding: 5px 12px; float: right; margin-right: 7px;
+}
 .resume-pre-tk {line-height: 12px; margin-bottom: 4px;}
 .p-r {
   position: relative;
