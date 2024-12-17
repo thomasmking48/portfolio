@@ -1,4 +1,4 @@
 # TK-Portfolio
 -- THOMAS M. KING --
 KERNERSVILLE NC, 27284 · THOMASMKING48@GMAIL.COM
-Designing user-friendly websites has always been my passion and hobby since my early childhood, which led me to pursue a career in this field. My past education and work experience have afforded me a well-rounded skill set, including first-rate analytical and problem-solving skills, as well as organizational communication and leadership qualities.
+Throughout my life, I have cultivated a deep passion for designing user-friendly websites and presentations that captivate and inspire audiences, which has driven me to pursue this career. My educational background and professional experience have enabled me to hone a diverse skill set, including analytical and problem-solving abilities, a strong work ethic and independence, and exceptional drive and self-reliance to ensure timely completion of tasks.
