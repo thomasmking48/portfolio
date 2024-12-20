@@ -14,6 +14,7 @@
 
   <!-- CSS Files -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/Dark-light-switch.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
@@ -80,6 +81,15 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#work">Work</a>
         </li>
+          <li>
+<div class="switch">
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="checkbox-label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="ball"></span>
+  </label>
+</div></li>
       </ul>
     </div>
   </nav>
@@ -94,6 +104,7 @@
         <div class="subheading mb-5"><!--Kernersville NC, 27284 · <a href="mailto:ThomasMKing48@gmail.com">ThomasMKing48@gmail.com</a>-->
         </div>
         <p class="lead mb-5">Throughout my life, I have cultivated a deep passion for designing user-friendly websites and presentations that captivate and inspire audiences, which has driven me to pursue this career. My educational background and professional experience have enabled me to hone a diverse skill set, including analytical and problem-solving abilities, a strong work ethic and independence, and exceptional drive and self-reliance to ensure timely completion of tasks.</p>
+         
         <br><br>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/thomas-king-224281340/" target="_blank">
@@ -360,7 +371,7 @@
 
     <hr class="m-0">
 
-    <section style="background: #f7f7f7" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="work">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="work">
    
 
   
@@ -4032,6 +4043,10 @@ for (var i = 0; i < btns.length; i++) {
     
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/resume.min.js"></script>
+  <script>const checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});</script>
 
 </body>
 </html>
