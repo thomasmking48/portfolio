@@ -17,6 +17,30 @@ body.dark .close-icon.py-1 {visibility: hidden;}
     padding-top:50px;
 }
 
+/* hide on mobile */
+@media(max-width:991px) {
+.switch {
+    display:none;
+}
+}
+
+/* hide on desktop */
+@media(min-width:992px) {
+.switch-mobile {
+    display:none;
+}
+}
+
+/* display on mobile */
+@media(max-width:991px) {
+.switch-mobile {
+    display: block;
+    position: inherit;
+    right: 87px;
+    top: 14px;
+    }
+}
+
 .checkbox-label {
   background-color: #111;
   width: 50px;
