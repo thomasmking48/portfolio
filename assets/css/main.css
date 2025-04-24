@@ -813,6 +813,18 @@ section,
   z-index: 2;
 }
 
+video#myVideo {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width:991px) {
+video#myVideo {
+    display: none;
+}
+}
+
 .hero .hero-image .shape-1,
 .hero .hero-image .shape-2 {
   position: absolute;
@@ -826,7 +838,11 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   top: -80px;
   right: -20px;
-  animation: morphShape 5s linear infinite;
+  animation: morphShape 10s linear infinite;
+}
+
+.img-part {
+    width: 50%;
 }
 
 .hero .hero-image .shape-2 {
@@ -835,7 +851,7 @@ section,
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
   bottom: -20px;
   left: -20px;
-  animation: morphShape 8s linear infinite reverse;
+  animation: morphShape 16s linear infinite reverse;
 }
 
 @media (max-width: 991px) {
