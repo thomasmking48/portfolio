@@ -813,18 +813,6 @@ section,
   z-index: 2;
 }
 
-video#myVideo {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
-
-@media (max-width:991px) {
-video#myVideo {
-    display: none;
-}
-}
-
 .hero .hero-image .shape-1,
 .hero .hero-image .shape-2 {
   position: absolute;
