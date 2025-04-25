@@ -195,6 +195,8 @@
     presentations: 'Presentations',
     collateral: 'Collateral',
     other: 'Other',
+    examples: 'Examples',
+      
   };
 
 //displays tags
