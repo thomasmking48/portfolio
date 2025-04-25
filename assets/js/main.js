@@ -188,6 +188,20 @@
       }
     }
   });
+    
+//tags 
+  const tags = {
+    webDesign: 'Web Design',
+    presentations: 'Presentations',
+    collateral: 'Collateral',
+    other: 'Other',
+  };
+
+//displays tags
+document.querySelectorAll('[data-tag]').forEach(el => {
+    const key = el.getAttribute('data-tag');
+    el.textContent = tags[key] || 'Unknown Tag';
+  });
 
   /**
    * Navmenu Scrollspy

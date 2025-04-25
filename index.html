@@ -24,18 +24,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- CSS and JS Files -->
   <link href="assets/css/main.css" rel="stylesheet">
-   
-  <!-- Tags -->
-  <script>
-  const tags = {
-    webDesign: 'Web Design',
-    branding: 'Branding',
-    uiux: 'UI/UX',
-    // Add more tags as needed
-  };
-  </script>
+  <script src="assets/js/main.js"></script>
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPTMLP4SVR"></script>
@@ -587,10 +578,10 @@
           <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Work</li>
-              <li data-filter=".filter-ppt">Presentations</li>
+              <li data-filter=".filter-ppt"><span class="tag" data-tag="presentations"></span></li>
               <li data-filter=".filter-web"><span class="tag" data-tag="webDesign"></span></li>
-              <li data-filter=".filter-collateral">Collateral</li>
-              <li data-filter=".filter-other">Other</li>
+              <li data-filter=".filter-collateral"><span class="tag" data-tag="collateral"></span></li>
+              <li data-filter=".filter-other"><span class="tag" data-tag="other"></span></li>
             </ul>
           </div>
 
@@ -741,7 +732,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Phosphorus Billions Conference</h3>
                   <p>Powerpoint Prospectus showing all the event details and mockups.</p>
                 </div>
@@ -761,7 +752,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Phosphorus Brand Guidelines</h3>
                   <p>Powerpoint presentation for Phosphorus brand guidelines.</p>
                 </div>
@@ -781,7 +772,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Phosphorus Sales Pitch</h3>
                   <p>Powerpoint presentation for Phosphorus sales pitch deck.</p>
                 </div>
@@ -801,7 +792,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Phosphorus Playbook</h3>
                   <p>Powerpoint presentation for Phosphorus playbook.</p>
                 </div>
@@ -821,7 +812,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>The Human-Canine Alliance Pitch</h3>
                   <p>Powerpoint presentation and branding (including logo) for TH-CA.</p>
                 </div>
@@ -841,7 +832,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Anitian Sales Pitch</h3>
                   <p>Powerpoint presentation for Anitian sales pitch deck.</p>
                 </div>
@@ -861,7 +852,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Anitian Brand Guidelines</h3>
                   <p>Powerpoint presentation for Anitian brand guidelines.</p>
                 </div>
@@ -881,7 +872,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Presentation</span>
+                  <span class="category"><span class="tag" data-tag="presentations"></span></span>
                   <h3>Phosphorus QBR Template</h3>
                   <p>Powerpoint presentation for Phosphorus QBR (Customer Success).</p>
                 </div>
@@ -921,7 +912,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Whitepaper</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Phosphorus Whitepaper</h3>
                   <p>Whitepaper created for Phosphorus Intelligent Active Discovery solution.</p>
                 </div>
@@ -941,7 +932,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">eBook</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Anitian Shiftup eBook</h3>
                   <p>Anitian eBook including logo and branding.</p>
                 </div>
@@ -961,7 +952,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Banner</span>
+                  <span class="category"><span class="tag" data-tag="other"></span></span>
                   <h3>Phosphorus Retractable Banner</h3>
                   <p>Phosphorus retractable banner for company Ignite event.</p>
                 </div>
@@ -981,7 +972,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Case Study</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Phosphorus Case Study</h3>
                   <p>Phosphorus case study focusing on Smart City.</p>
                 </div>
@@ -1002,7 +993,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Use Case</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Phosphorus Use Case</h3>
                   <p>Phosphorus use case focusing on the platform.</p>
                 </div>
@@ -1022,7 +1013,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Business Card</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Anitian Business Card</h3>
                   <p>Business card created for all Anitian employees.</p>
                 </div>
@@ -1042,7 +1033,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Podcast</span>
+                  <span class="category"><span class="tag" data-tag="other"></span></span>
                   <h3>Anitian Podcast Branding</h3>
                   <p>Anitian Security on Cloud podcast branding including logo, webpage, and branding.</p>
                 </div>
@@ -1062,7 +1053,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Business Card</span>
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Bob Harper Photography Card</h3>
                   <p>Business card for Bob Harper Photography.</p>
                 </div>
@@ -1082,7 +1073,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Booth</span>
+                  <span class="category"><span class="tag" data-tag="other"></span></span>
                   <h3>Anitian Booth Design</h3>
                   <p>Booth design for Anitian event.</p>
                 </div>
@@ -1517,17 +1508,10 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- JS File -->
   <script src="assets/js/main.js"></script>
-      
-  <!-- Tags -->
-  <script>
-  document.querySelectorAll('[data-tag]').forEach(el => {
-    const key = el.getAttribute('data-tag');
-    el.textContent = tags[key] || 'Unknown Tag';
-  });
-  </script>
 
+      
 </body>
 
 </html>
