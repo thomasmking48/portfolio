@@ -26,6 +26,16 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+   
+  <!-- Tags -->
+  <script>
+  const tags = {
+    webDesign: 'Web Design',
+    branding: 'Branding',
+    uiux: 'UI/UX',
+    // Add more tags as needed
+  };
+  </script>
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPTMLP4SVR"></script>
@@ -578,7 +588,7 @@
             <ul class="portfolio-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Work</li>
               <li data-filter=".filter-ppt">Presentations</li>
-              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-web"><span class="tag" data-tag="webDesign"></span></li>
               <li data-filter=".filter-collateral">Collateral</li>
               <li data-filter=".filter-other">Other</li>
             </ul>
@@ -594,12 +604,12 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/Pho-1.mp4" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                       <!--<a href="#" class="details-link"><i class="bi bi-arrow-right"></i></a>-->
+                       <a href="/phosphorus-website.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Phosphorus Website</h3>
                   <p>The site was fully rebuilt using Elementor + some pages were built in Webflow, with custom-designed pages for each landing page, event, and campaign.</p>
                 <br>
@@ -621,7 +631,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Anitian Website</h3>
                   <p>The site was fully rebuilt using Divi, with custom-designed pages for each landing page, event, and campaign.</p>
                 <br>
@@ -643,7 +653,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Betterdoor</h3>
                   <p>Built in WordPress using Woocommerce and Hubspot.</p>
                 <br>
@@ -665,7 +675,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Parr Investments</h3>
                   <p>Built in Wordpress using a custom theme to enhance user experience for each apartment complex.</p>
                 <br>
@@ -687,7 +697,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Endura Products</h3>
                   <p>Wordpress website - parent site for Betterdoor.com</p>
                 <br>
@@ -709,7 +719,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
+                  <span class="category"><span class="tag" data-tag="webDesign"></span></span>
                   <h3>Savers Health</h3>
                   <p>Wordpress website with custom icons and theme.</p>
                  <br>
@@ -1509,6 +1519,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+      
+  <!-- Tags -->
+  <script>
+  document.querySelectorAll('[data-tag]').forEach(el => {
+    const key = el.getAttribute('data-tag');
+    el.textContent = tags[key] || 'Unknown Tag';
+  });
+  </script>
 
 </body>
 

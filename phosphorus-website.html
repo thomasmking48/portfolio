@@ -26,14 +26,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+   
+  <!-- Tags -->
+  <script>
+  const tags = {
+    webDesign: 'Web Design',
+    branding: 'Branding',
+    uiux: 'UI/UX',
+    // Add more tags as needed
+  };
+  </script>
 
-  <!-- =======================================================
-  * Template Name: EasyFolio
-  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
-  * Updated: Feb 21 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
@@ -94,12 +97,8 @@
         <div class="row gy-4 g-lg-5">
           <div class="col-lg-6">
             <img src="assets/img/portfolio/Pho-img.png" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/Pho_2.png" class="img-fluid mb-4" alt="">
+            <img src="assets/img/portfolio/Pho_3.png" class="img-fluid mb-4" alt="">
           </div>
 
           <div class="col-lg-6">
@@ -115,14 +114,18 @@
                   As the webmaster, I was responsible for ensuring the website remained current with the latest design trends, functionality improvements, and technical updates. This role required continuous oversight and maintenance, all while I simultaneously served as the company’s Senior Digital Design Manager. <a href="/portfolio/#portfolio"><u>Check out my work for more details.</u></a>
                 </p>
                   
+                   <br>
                 <hr>
+                  <br>
                   
                 <h2>Phosphorus Core Pages</h2>
                 <p>
                   The website was primarily built using the Elementor page builder, featuring fully custom-designed layouts. Each section includes tailored illustrations, imagery, or visual elements strategically designed to enhance and support the content, creating a more engaging and intuitive user experience.
                 </p>
-                  
+                 
+                  <br>
                 <hr>
+                  <br>
                   
                 <h2>Custom Pages</h2>
                 <p>                    
@@ -134,11 +137,12 @@
               <div class="portfolio-info mt-5">
                 <h3>Project information</h3>
                 <ul>
-                  <li><strong>Category</strong> Web design</li>
-                  <li><strong>Client</strong> ASU Company</li>
-                  <li><strong>Project date</strong> 01 March, 2020</li>
-                  <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                  <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                  <li><strong>Category</strong> <span class="tag" data-tag="webDesign"></span></li>
+                  <li><strong>Client</strong> Phosphorus Cybersecurity</li>
+                  <li><strong>Project date</strong> July 2022 – December 2024</li>
+                  <li><strong>Project URL</strong> <a href="https://phosphorus.io/">www.phosphorus.io</a></li>
+                    <br>
+                  <li><a href="https://phosphorus.io/" class="btn-visit align-self-start" target="_blank">Visit Website</a></li>
                 </ul>
               </div>
             </div>
@@ -156,20 +160,12 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Thomas King</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <a href="https://www.linkedin.com/in/thomas-king-224281340/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/tomking3" target="_blank" class="behance"><i class="bi bi-behance"></i></a>
+        <a href="https://github.com/thomasmking48" target="_blank" class="github"><i class="bi bi-github"></i></a>
       </div>
     </div>
 
@@ -190,6 +186,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+    
+  <!-- Tags -->
+  <script>
+  document.querySelectorAll('[data-tag]').forEach(el => {
+    const key = el.getAttribute('data-tag');
+    el.textContent = tags[key] || 'Unknown Tag';
+  });
+  </script>
 
 </body>
 
