@@ -114,9 +114,55 @@
           </div>
           <div class="col-lg-6">
            <div class="hero-image">
+               
+<video id="backgroundVideo" autoplay loop muted playsinline preload="auto">
+  <source src="/assets/img/portfolio/Portfolio_Hero.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+               
+<style>
+video {
+    width: 850px;
+    height: 100%;
+    margin-left: -200px;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    display: block;
+}
+    @media (max-width:992px) {
+video {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    display: block;
+}
+}
+</style>
+               
+<script>
+  const video = document.getElementById('backgroundVideo');
+  
+  // Optional: Restart video immediately if it fails to loop smoothly
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play();
+  });
+
+  // Optional: Force play immediately if autoplay policies block it
+  document.addEventListener('DOMContentLoaded', () => {
+    video.play().catch(err => {
+      console.log('Autoplay prevented, trying to play after user interaction');
+      document.body.addEventListener('click', () => video.play());
+    });
+  });
+</script>
            
-               <div class="shape-1"></div>
-              <div class="shape-2"></div>
+              <!-- <div class="shape-1"></div>
+              <div class="shape-2"></div> -->
 
           </div>
         </div>
@@ -1042,6 +1088,25 @@
                   <span class="category"><span class="tag" data-tag="collateral"></span></span>
                   <h3>Phosphorus Use Case</h3>
                   <p>Phosphorus use case focusing on the platform.</p>
+                </div>
+              </div>
+            </div>
+                            
+           <!-- Collateral - Lwell --> 
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-collateral">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/lwell-1.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/lwell-1.mp4" class="glightbox preview-link" data-gallery="lwell-graphics"><i class="bi bi-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category"><span class="tag" data-tag="collateral"></span></span>
+                  <h3>LWell Trifold</h3>
+                  <p>Created a simple trifold design for a wellness comapny.</p>
                 </div>
               </div>
             </div>

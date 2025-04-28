@@ -713,10 +713,12 @@ section,
 }
 
 .hero .content h2 {
-  font-size: 4.1rem;
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+    font-size: 4.1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    z-index: 9;
+    position: relative;
 }
 
 @media (max-width: 991px) {
