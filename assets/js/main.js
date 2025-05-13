@@ -194,6 +194,7 @@
     webDesign: 'Web Design',
     presentations: 'Presentations',
     collateral: 'Collateral',
+    booths: 'Booths',
     other: 'Other',
     examples: 'Examples',
       
