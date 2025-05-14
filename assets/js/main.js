@@ -194,10 +194,9 @@
     webDesign: 'Web Design',
     presentations: 'Presentations',
     collateral: 'Collateral',
-    booths: 'Booths',
+    booths: 'Conferences',
     other: 'Other',
     examples: 'Examples',
-      
   };
 
 //displays tags
